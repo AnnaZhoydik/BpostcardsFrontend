@@ -7,19 +7,28 @@
       <a class="navbar-brand"><img src="../../assets/images/logo.png" alt="Progressus HTML5 template"></a>
     </div>
     <div class="navbar-collapse collapse">
+
       <ul class="nav navbar-nav pull-right">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="/postcards">Postcards</a></li>
+        <li class="active"><a routerLink="/">{{ 'header.home' | translate }}</a></li>
+        <li><a routerLink="/postcards">{{ 'header.postcards' | translate }}</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages<b class="caret"></b></a>
+          <a routerLink="/" class="dropdown-toggle" data-toggle="dropdown">{{ 'header.more_pages' | translate }}<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/questions">Questions</a></li>
-            <li><a href="/gallery">Gallery</a></li>
+            <li><a routerLink="/questions">{{ 'header.questions' | translate }}</a></li>
+            <li><a routerLink="/gallery">{{ 'header.gallery' | translate }}</a></li>
           </ul>
         </li>
-        <li><a href="/contacts">Contact</a></li>
-        <li><a class="btn" href="/signin">SIGN IN / SIGN UP</a></li>
+        <li><a routerLink="/contacts">{{ 'header.contact' | translate }}</a></li>
+        <li><a class="btn" routerLink="/signin">{{ 'header.sign_in_sign_up' | translate }}</a></li>
+        <li class="dropdown-toggle">
+          <a routerLink="/" data-toggle="dropdown">{{ 'header.language' | translate }}
+            <span class="caret"></span></a>
+          <ol class="dropdown-menu">
+            <li><a href="#" (click)=localeToEng()>Eng</a></li>
+            <li><a href="#" (click)=localeToEst()>Est</a></li>
+            <li><a href="#"(click)=localeToRus()>Rus</a></li>
+          </ol></li>
       </ul>
-    </div><!--/.nav-collapse -->
+    </div>
   </div>
 </div>

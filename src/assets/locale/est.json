@@ -1,0 +1,36 @@
+{
+  "header": {
+    "home": "Kodu",
+    "more_pages": "Teised kodulehed",
+    "postcards": "Postkaardid",
+    "questions": "Küsimused",
+    "gallery": "Galerii",
+    "contact": "Võtke ühendust",
+    "sign_in_sign_up": "LOGI SISSE / REGISTREERI",
+    "language": "keel"
+  },
+    "main":{
+      "awesome_surprise":"ÄGE ÜLLATUS",
+      "create_a_personal":"Looge kellelegi, keda armastate, isiklik postkaart",
+      "create_postcard":"Loo postkaart",
+      "an_excellent_chance":"SUUREPÄRANE VÕIMALUS ÜLLATA OMA LÄHEDASI ISIKLIKU POSTKAARDIGA",
+      "all_you_need":"Kõik, mida vajate, on leida endast või teie lähedastest fotod (alates 4-8) ja kirjutada neile oma soovid.",
+      "colleagues_at_work":"KOLLEEGID TÖÖL",
+      "down_with_impersonal":"Alla isikupäratud kingitused – muutke oma firmakingitused isiklikeks!",
+      "birthday":"SÜNNIPÄEV",
+      "birthday_girl":"Sünnipäevatüdruk hindab kindlasti südamest kingitud suurepärast postkaarti.",
+      "to_please":"REEMIDA OMA LÄHETATUDELE",
+      "your_mother":"Teie ema, vanaema või õde on õnnelik, kui saate teie käest nii armsa ja sooja žesti.",
+      "confessing":"TUNNISTADES OMA ARMASTUST KELLEGI",
+      "an_ideal_gift":"Suurepärane võimalus oma tundeid kellelegi ebatavalisel viisil tunnistada"
+    },
+
+  "postcards":{
+    "home":"Koduleht",
+    "postcards":"Postkaardid",
+    "bpostcards":"BPostkaart fotoga",
+    "boom_cards":"Buumikaardid on tänapäeval äärmiselt populaarsed, sest neid peetakse õigustatult kõige ebatavalisemaks kingituseks. Rangelt võttes ei saa selline postkaart iseenesest olla kingitus; pigem täiendab see peamist kingitust, mis pärast sellist «täiendamist» võib olla meelevaldselt banaalne.",
+    "a_boom_postcard":"Buumpostkaart (tuntud ka kui BOOM-postkaart või plahvatav postkaart) on kolmemõõtmeline postkaart, mis plahvatab (tinglikult) selle inimese käes, kes üritab seda avada. Kostab pehme pauk ja konfettid lendavad ringi. See kõik tundub väga särav ja mis kõige tähtsam - ootamatult. See tähendab, et vatt ei ole nii vali, et inimest hirmutada, sest postkaardi ülesanne on üllatada.",
+    "a_boom_card":"Buumikaart toob kindlasti siira naeratuse ja mõnda aega ei tea inimene isegi, mida öelda. Ta mäletab kindlasti seda puhkust, teie kingitust ja teid isiklikult. Seetõttu sobib plahvatav kaart ideaalselt enda jaoks olulise inimese meeldivaks üllatamiseks."
+  }
+  }

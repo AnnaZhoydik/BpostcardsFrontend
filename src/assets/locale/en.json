@@ -1,0 +1,44 @@
+{
+  "header": {
+    "home": "Home",
+    "more_pages": "More Pages",
+    "postcards": "Postcards",
+    "questions": "Questions",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "sign_in_sign_up": "SIGN IN / SIGN UP",
+    "language": "language"
+  },
+    "main": {
+      "awesome_surprise": "AWESOME SURPRISE",
+      "create_a_personal": "Create a personal postcard for somebody that you love",
+      "create_postcard": "Create postcard",
+      "an_excellent_chance": "AN EXCELLENT CHANCE TO SURPRISE YOUR LOVED ONES WITH A PERSONAL POSTCARD",
+      "all_you_need": "All you need is to find photos of you or your loved ones (from 4-8) and write your wishes to them.",
+      "colleagues_at_work": "COLLEAGUES AT WORK",
+      "down_with_impersonal": "Down with impersonal presents – turn your corporate gifts into personal ones!",
+      "birthday": "BIRTHDAY",
+      "birthday_girl": "The birthday girl will certainly appreciate the magnificent postcard presented from the heart.",
+      "to_please": "TO PLEASE YOUR LOVED ONES",
+      "your_mother": "Your mother, grandmother or sister will be happy to receive such a sweet and warm gesture from your.",
+      "confessing": "CONFESSING YOUR LOVE TO SOMEONE",
+      "an_ideal_gift": "An ideal chance to confess your feelings to someone in an unusual way."
+    },
+
+    "postcards":{
+      "home":"Home",
+      "postcards":"Postcards",
+      "bpostcards":"BPostcard with photo",
+      "boom_cards":"Boom postcards are extremely popular today, because they are rightfully considered the most unusual present. Strictly speaking, in itself such a postcard can hardly be a gift; rather, it complements the main gift, which after such an “addition” can be arbitrarily banal.",
+      "a_boom_postcard":"A boom postcard (also known as a BOOM postcard or an exploding postcard) is a three-dimensional postcard that explodes (conditionally) in the hands of the person who tries to open it. There is a soft bang and confetti fly around. It all looks very bright and most importantly - unexpectedly. That is, the cotton is not so loud as to scare a person, because the task of a postcard is to surprise.",
+      "a_boom_card":"A boom postcard is guaranteed to give a sincere smile and for some time a person will not even know what to say. He will definitely remember this holiday, your gift and you personally. Therefore, an exploding card is ideal for pleasantly surprising someone important to you."
+    }
+    }
+
+
+
+
+
+
+
+

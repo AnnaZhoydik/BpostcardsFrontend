@@ -7,6 +7,7 @@ import {ContactComponent} from "./contact/contact.component";
 import {GalleryComponent} from "./gallery/gallery.component";
 import {SigninComponent} from "./signin/signin.component";
 import {SignupComponent} from "./signup/signup.component";
+import {CreatePostcardComponent} from "./create-postcard/create-postcard.component";
 
 const routes: Routes = [
   {path: '', component: MainComponent},
@@ -16,10 +17,23 @@ const routes: Routes = [
   {path: 'gallery',component: GalleryComponent},
   {path: 'signin',component: SigninComponent},
   {path: 'signup',component: SignupComponent},
+  {path:'create-postcard',component:CreatePostcardComponent}
   ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+  files: File[] = [];
+
+  onSelect(event:any) {
+    console.log(event);
+    this.files.push(...event.addedFiles);
+  }
+
+  onRemove(event:any) {
+    console.log(event);
+    this.files.splice(this.files.indexOf(event), 1);
+  }
+}

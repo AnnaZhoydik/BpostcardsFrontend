@@ -8,6 +8,7 @@
       "schematics": {
         "@schematics/angular:application": {
           "strict": true
+//          "noImplicitAny":false
         }
       },
       "root": "",
