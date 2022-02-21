@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,11 +15,12 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { CreatePostcardComponent } from './create-postcard/create-postcard.component';
-
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import { NextDirective } from './next.directive';
+import { PrevDirective } from './prev.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
     GalleryComponent,
     SigninComponent,
     SignupComponent,
-    CreatePostcardComponent
+    CreatePostcardComponent,
+    NextDirective,
+    PrevDirective
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,7 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
 
 //Откуда грузить файлы с переводом
 export function HttpLoaderFactory(http: HttpClient): TranslateLoader {

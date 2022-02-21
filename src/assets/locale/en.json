@@ -32,8 +32,63 @@
       "boom_cards":"Boom postcards are extremely popular today, because they are rightfully considered the most unusual present. Strictly speaking, in itself such a postcard can hardly be a gift; rather, it complements the main gift, which after such an “addition” can be arbitrarily banal.",
       "a_boom_postcard":"A boom postcard (also known as a BOOM postcard or an exploding postcard) is a three-dimensional postcard that explodes (conditionally) in the hands of the person who tries to open it. There is a soft bang and confetti fly around. It all looks very bright and most importantly - unexpectedly. That is, the cotton is not so loud as to scare a person, because the task of a postcard is to surprise.",
       "a_boom_card":"A boom postcard is guaranteed to give a sincere smile and for some time a person will not even know what to say. He will definitely remember this holiday, your gift and you personally. Therefore, an exploding card is ideal for pleasantly surprising someone important to you."
-    }
-    }
+    },
+  "questions":{
+    "home":"Home",
+    "questions":"Questions",
+    "frequently":"Frequently asked Questions.",
+    "who_is_usually":"Who is usually given boom cards with a photo?",
+    "the_answer":"The answer is absolutely everyone! Photo boom cards are really quite versatile as an addition to the main gift. They are given to men and women, adults and children. That's right - boom cards are suitable for children's events because they are completely safe.",
+    "that_is_why":"That is why a boom-card can be bought for any person. It can be given to a friend or relative, an acquaintance or even your boss. It is only important that the person to whom you give such a card understands humor and you have a good relationship. That is, someone may regard such a gift as a manifestation of familiarity, and in fact this is the only purely subjective restriction in terms of using boom cards",
+    "on_what":"On what holidays is it better to give boom cards?",
+    "it_is_difficult":"It is difficult to come up with a situation in which an exploding postcard would be inappropriate. Wherever gifts appear and where you want to pleasantly surprise a person, show that you thought about him and tried to do something original, a boom postcard with a photo will come in handy. For example, such cards are most often given for birthdays, as well as for weddings and graduations. It can be some kind of personal event, for example, the first edition of a book, a victory in sports competitions.",
+    "also":"Also, exploding postcards are great for corporate events in an informal setting. They can be given to subordinates and managers, the main thing - again - is that the boss understands humor. A boom card with a photo can be given for Valentine's Day or some kind of family holiday. As we have already said, the postcard itself can hardly be a gift, but it is better not to think of it as a spectacular addition!",
+    "how_long":"How long after ordering can I receive a postcard?",
+    "depends":"Depends if you order via Smartpost, Dpd or pick up yourself. In the first case, it is 1-3 business days. If you decide to pick it up yourself, then the order will be ready (depending on the complexity) possibly the next day."
+  },
+  "gallery":{
+    "home":"Home",
+    "gallery":"Gallery"
+  },
+  "signin":{
+  "home":"Home",
+    "signin":"User access",
+    "sign_in":"Sign in",
+    "your_account":"Sign in to your account",
+    "dont_have":"You dont have an account? Please",
+    "register":" Register",
+    "username":"Username/Email",
+    "password":"Password",
+    "forgot":"Forgot password?",
+    "sign":"Sign in"
+
+},
+  "signup":{
+    "home":"Home",
+    "register_link":"Registration",
+    "registration":"Registration",
+    "register":"Register a new account",
+    "have_you":"Have you already registered? Please",
+    "name":"First Name",
+    "lastname":"Last Name",
+    "email":"Email Address ",
+    "password":"Password",
+    "confirm":"Confirm Password",
+    "read":"I've read the",
+    "terms":"Terms and Conditions",
+    "login":"Login",
+    "registration_link":"Register"
+
+
+  },
+  "contact": {
+    "home": "Home",
+    "contact": "Contacts",
+    "contact_us": "Contact us",
+    "hear_from_you": "We’d love to hear from you. Interested in working together? Fill out the form below with some info about your postcard ideas and we will get back to you as soon as we can. Please allow a couple days for us to respond.",
+    "newsletter": " Sign up for newsletter",
+    "adress": "Address"
+  }}
 
 
 

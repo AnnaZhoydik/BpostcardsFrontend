@@ -32,5 +32,66 @@
     "boom_cards":"Buumikaardid on tänapäeval äärmiselt populaarsed, sest neid peetakse õigustatult kõige ebatavalisemaks kingituseks. Rangelt võttes ei saa selline postkaart iseenesest olla kingitus; pigem täiendab see peamist kingitust, mis pärast sellist «täiendamist» võib olla meelevaldselt banaalne.",
     "a_boom_postcard":"Buumpostkaart (tuntud ka kui BOOM-postkaart või plahvatav postkaart) on kolmemõõtmeline postkaart, mis plahvatab (tinglikult) selle inimese käes, kes üritab seda avada. Kostab pehme pauk ja konfettid lendavad ringi. See kõik tundub väga särav ja mis kõige tähtsam - ootamatult. See tähendab, et vatt ei ole nii vali, et inimest hirmutada, sest postkaardi ülesanne on üllatada.",
     "a_boom_card":"Buumikaart toob kindlasti siira naeratuse ja mõnda aega ei tea inimene isegi, mida öelda. Ta mäletab kindlasti seda puhkust, teie kingitust ja teid isiklikult. Seetõttu sobib plahvatav kaart ideaalselt enda jaoks olulise inimese meeldivaks üllatamiseks."
+  },
+  "questions":{
+    "home":"Koduleht",
+    "questions":"Küsimused",
+    "frequently":"Korduma kippuvad küsimused.",
+    "who_is_usually":"Kellele antakse tavaliselt fotoga buumikaarte?",
+    "the_answer":"Vastus on absoluutselt kõigil! Fotobuumi kaardid on põhikingituse lisandina tõesti üsna mitmekülgsed. Neid antakse meestele ja naistele, täiskasvanutele ja lastele. Täpselt nii – buumikaardid sobivad lasteüritustele, sest on täiesti ohutud.",
+    "that_is_why":"Seetõttu saab buumikaarti osta igale inimesele. Selle võib kinkida sõbrale või sugulasele, tuttavale või isegi oma ülemusele. Tähtis on vaid see, et inimene, kellele sa sellise kaardi annad, mõistaks huumorit ja sul oleks head suhted. See tähendab, et keegi võib sellist kingitust pidada tuttavlikkuse ilminguks ja tegelikult on see ainuke puhtalt subjektiivne piirang buumikaartide kasutamisel.",
+    "on_what":"Millistel pühadel on parem buumikaarte kinkida?",
+    "it_is_difficult":"Raske on tulla välja olukorraga, kus plahvatav postkaart oleks sobimatu. Kus iganes kingitused ilmuvad ja kus soovite inimest meeldivalt üllatada, näidata, et mõtlesite tema peale ja proovisite teha midagi originaalset, tuleb kasuks fotoga buumpostkaart. Näiteks kingitakse selliseid kaarte kõige sagedamini sünnipäevaks, samuti pulmadeks ja koolilõpetamiseks. See võib olla mingi isiklik sündmus, näiteks raamatu esmatrükk, võit spordivõistlustel.",
+    "also":"Samuti sobivad plahvatavad postkaardid suurepäraselt mitteametlikus keskkonnas toimuvate korporatiivürituste jaoks. Neid võib anda alluvatele ja juhtidele, peaasi - jällegi - et ülemus huumorist aru saaks. Fotoga buumikaardi saab kinkida sõbrapäevaks või mõneks perepuhkuseks. Nagu me juba ütlesime, ei saa postkaart ise olla kingitus, kuid parem on mitte mõelda sellele kui suurejoonelisele lisandile!",
+    "how_long":"Kui kaua pärast tellimist saan postkaardi kätte saada?",
+    "depends":"Oleneb, kas tellid Smartposti, Dpd kaudu või tuled ise järgi. Esimesel juhul on see 1-3 tööpäeva. Kui otsustate ise järgi tulla, siis on tellimus valmis (olenevalt keerukusest) võimalik, et järgmisel päeval."
+  },
+  "gallery":{
+    "home":"Koduleht",
+    "gallery":"Galerii"
+  },
+  "signin":{
+    "home":"Koduleht",
+    "signin":"Kasutaja juurdepääs",
+    "sign_in":"Logi sisse",
+    "your_account":"Logige oma kontole sisse",
+    "dont_have":"Kas teil pole kontot? Palun",
+    "register":"Registreeri ",
+    "username":"Kasutajanimi/e-post",
+    "password":"salasõna",
+    "forgot":"Unustasid?",
+    "sign":"Logi sisse"
+
+  },
+  "signup":{
+    "home":"Koduleht",
+    "register_link":"Registreerimine",
+    "registration":"Registreerimine",
+    "register":"Registreerige uus konto",
+    "have_you":"Kas oled juba registreerunud? Palun",
+    "name":"Eesnimi",
+    "lastname":"Perekonnanimi",
+    "email":"E-post",
+    "password":"salasõna",
+    "confirm":"Kinnita salasõna",
+    "read":"len lugenud",
+    "terms":"Tingimused",
+    "login":"Logi sisse",
+    "registration_link":"Registreeri"
+
+
+  },
+  "contact":{
+    "home":"Koduleht",
+    "contact":"Võtke ühendust",
+    "contact_us":"Võtke ühendust meiega",
+    "hear_from_you":"Meile meeldiks sinust kuulda,kas olete huvitatud koos töötamisest? Täitke allolev vorm oma postkaardiideede kohta teabega ja me võtame teiega esimesel võimalusel ühendust. Palun oodake vastamiseks paar päeva.",
+    "newsletter":" Liituge uudiskirjaga",
+    "adress":"Aadress"
+
   }
-  }
+
+}
+
+
+

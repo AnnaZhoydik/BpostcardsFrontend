@@ -4,45 +4,45 @@
 <div class="container">
 
   <ol class="breadcrumb">
-    <li><a href="index.html">Home</a></li>
-    <li class="active">Registration</li>
+    <li><a href="#">{{ 'signup.home' | translate }}</a></li>
+    <li class="active">{{ 'signup.register_link' | translate }}</li>
   </ol>
 
   <div class="row">
 
   <article class="col-xs-12 maincontent">
   <header class="page-header">
-    <h1 class="page-title">Registration</h1>
+    <h1 class="page-title">{{ 'signup.registration' | translate }}</h1>
   </header>
 
   <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
     <div class="panel panel-default">
       <div class="panel-body">
-        <h3 class="thin text-center">Register a new account</h3>
-        <p class="text-center text-muted">Have you already registered? Please <a href="/signin">Login</a> to your account. </p>
+        <h3 class="thin text-center">{{ 'signup.register' | translate }}</h3>
+        <p class="text-center text-muted">{{ 'signup.have_you' | translate }} <a href="/signin">{{ 'signup.login' | translate }}</a> to your account. </p>
         <hr>
 
         <form>
           <div class="top-margin">
-            <label>First Name</label>
+            <label>{{ 'signup.name' | translate }}</label>
             <input type="text" class="form-control">
           </div>
           <div class="top-margin">
-            <label>Last Name</label>
+            <label>{{ 'signup.lastname' | translate }}</label>
             <input type="text" class="form-control">
           </div>
           <div class="top-margin">
-            <label>Email Address <span class="text-danger">*</span></label>
+            <label>{{ 'signup.email' | translate }} <span class="text-danger">*</span></label>
             <input type="text" class="form-control">
           </div>
 
           <div class="row top-margin">
             <div class="col-sm-6">
-              <label>Password <span class="text-danger">*</span></label>
+              <label>{{ 'signup.password' | translate }} <span class="text-danger">*</span></label>
               <input type="text" class="form-control">
             </div>
             <div class="col-sm-6">
-              <label>Confirm Password <span class="text-danger">*</span></label>
+              <label>{{ 'signup.confirm' | translate }}<span class="text-danger">*</span></label>
               <input type="text" class="form-control">
             </div>
           </div>
@@ -53,11 +53,11 @@
             <div class="col-lg-8">
               <label class="checkbox">
                 <input type="checkbox">
-                I've read the <a href="page_terms.html">Terms and Conditions</a>
+                {{ 'signup.read' | translate }} <a href="page_terms.html">{{ 'signup.terms' | translate }}</a>
               </label>
             </div>
             <div class="col-lg-4 text-right">
-              <button class="btn btn-action" type="submit">Register</button>
+              <button class="btn btn-action" type="submit">{{ 'signup.registration_link' | translate }}</button>
             </div>
           </div>
         </form>

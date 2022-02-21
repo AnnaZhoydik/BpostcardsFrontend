@@ -9,6 +9,7 @@ import {SigninComponent} from "./signin/signin.component";
 import {SignupComponent} from "./signup/signup.component";
 import {CreatePostcardComponent} from "./create-postcard/create-postcard.component";
 
+
 const routes: Routes = [
   {path: '', component: MainComponent},
   {path: 'questions', component: QuestionsComponent},

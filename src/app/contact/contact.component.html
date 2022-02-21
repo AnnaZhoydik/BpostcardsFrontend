@@ -6,8 +6,8 @@
 <div class="container">
 
   <ol class="breadcrumb">
-    <li><a href="index.html">Home</a></li>
-    <li class="active">Contacts</li>
+    <li><a href="index.html">{{ 'contact.home' | translate }}</a></li>
+    <li class="active">{{ 'contact.contact' | translate }}</li>
   </ol>
 
   <div class="row">
@@ -15,11 +15,11 @@
   <!-- Article main content -->
     <article class="col-sm-9 maincontent">
       <header class="page-header">
-        <h1 class="page-title">Contact us</h1>
+        <h1 class="page-title">{{ 'contact.contact_us' | translate }}</h1>
       </header>
 
       <p>
-        We’d love to hear from you. Interested in working together? Fill out the form below with some info about your postcard ideas and we will get back to you as soon as we can. Please allow a couple days for us to respond.
+        {{ 'contact.hear_from_you' | translate }}
       </p>
       <br>
       <form>
@@ -43,7 +43,7 @@
         <br>
         <div class="row">
           <div class="col-sm-6">
-            <label class="checkbox"><input type="checkbox"> Sign up for newsletter</label>
+            <label class="checkbox"><input type="checkbox">{{ 'contact.newsletter' | translate }}</label>
           </div>
           <div class="col-sm-6 text-right">
             <input class="btn btn-action" type="submit" value="Send message">
@@ -53,7 +53,7 @@
     </article>
     <aside class="col-sm-3 sidebar sidebar-right">
       <div class="widget">
-        <h4>Address</h4>
+        <h4>{{ 'contact.adress' | translate }}</h4>
         <address>
           ESTONIA, Tallinn
         </address>

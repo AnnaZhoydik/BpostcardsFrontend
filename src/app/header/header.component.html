@@ -21,12 +21,12 @@
         <li><a routerLink="/contacts">{{ 'header.contact' | translate }}</a></li>
         <li><a class="btn" routerLink="/signin">{{ 'header.sign_in_sign_up' | translate }}</a></li>
         <li class="dropdown-toggle">
-          <a routerLink="/" data-toggle="dropdown">{{ 'header.language' | translate }}
+          <a data-toggle="dropdown">{{ 'header.language' | translate }}
             <span class="caret"></span></a>
           <ol class="dropdown-menu">
-            <li><a href="#" (click)=localeToEng()>Eng</a></li>
-            <li><a href="#" (click)=localeToEst()>Est</a></li>
-            <li><a href="#"(click)=localeToRus()>Rus</a></li>
+            <li><a  (click)=localeToEng()>Eng</a></li>
+            <li><a  (click)=localeToEst()>Est</a></li>
+            <li><a (click)=localeToRus()>Rus</a></li>
           </ol></li>
       </ul>
     </div>
