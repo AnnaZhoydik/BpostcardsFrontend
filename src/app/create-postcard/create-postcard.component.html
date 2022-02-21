@@ -1,0 +1,68 @@
+<header id="head" class="secondary"></header>
+
+<div class="main-menu">
+  <!-- container -->
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li class="active">Create postcard</li>
+    </ol>
+  </div>
+  <aside class="col-md-4 sidebar sidebar-left">
+    <div class="picture">
+      <ngx-dropzone (change)="onSelect($event)" style="margin: 20px;">
+        <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
+        <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)" [file]="f">
+          <ngx-dropzone-label>({{ f.type }})</ngx-dropzone-label>
+        </ngx-dropzone-image-preview>
+      </ngx-dropzone>
+    </div>
+      <div>
+        <button (click)="onUpload()">
+          load
+        </button>
+      </div>
+
+
+      <div class="row widget">
+
+    </div>
+
+  </aside>
+
+<section class="product">
+  <div class="container-fluid">
+    <div class="slider-wrap">
+      <div class="slider-main">
+
+        <div class="item">
+        <div class="text"><img src="../../assets/images/1645300431367.png"></div>
+        </div>
+         <div class="item">
+           <div class="text"><img src="../../assets/images/1645300431302.png"></div>
+         </div>
+           <div class="item">
+             <div class="text"><img src="../../assets/images/1645300436334.png"></div>
+           </div>
+      </div>
+      <div class="button-area">
+         <button type="button " class="prev" appPrev>Prev</button>
+         <button type="button" class="next" appNext>Next</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
