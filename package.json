@@ -27,6 +27,7 @@
     "jquery": "^3.6.0",
     "mdbootstrap": "^4.20.0",
     "ng2-file-upload": "^1.4.0",
+    "ngx-carousel-3d": "^1.0.1",
     "ngx-dropzone": "^3.1.0",
     "ngx-slick-carousel": "^0.5.1",
     "nvm": "^0.0.4",

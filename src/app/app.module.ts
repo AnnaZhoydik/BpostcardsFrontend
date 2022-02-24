@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgxCarousel3dModule }  from 'ngx-carousel-3d';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -50,7 +50,8 @@ import { PrevDirective } from './prev.directive';
         deps: [HttpClient],
       },
       useDefaultLang: false,
-    })
+    }),
+    NgxCarousel3dModule
   ],
   providers: [],
   bootstrap: [AppComponent]

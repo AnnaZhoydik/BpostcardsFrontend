@@ -1,6 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ViewChild} from '@angular/core';
 import {UploadService} from '../../services/upload.service'
-
+import { NgxCarousel3dModule }  from 'ngx-carousel-3d';
+import {MovieService} from "../movie.service";
 
 @Component({
   selector: 'app-create-postcard',
@@ -10,22 +11,21 @@ import {UploadService} from '../../services/upload.service'
 })
 export class CreatePostcardComponent implements OnInit {
 
-
   files: File[] = [];
 
-  constructor(private _uploadService:UploadService){
+  constructor(private _uploadService:UploadService, private $movie: MovieService){
 
   }
 
-  onSelect(event:any) {
-    console.log(event);
-    this.files.push(...event.addedFiles);
-  }
+  // onSelect(event:any) {
+  //   console.log(event);
+  //   this.files.push(...event.addedFiles);
+  // }
 
-  onRemove(event:any) {
-    console.log(event);
-    this.files.splice(this.files.indexOf(event), 1);
-  }
+  // onRemove(event:any) {
+  //   console.log(event);
+  //   this.files.splice(this.files.indexOf(event), 1);
+  // }
 
   onUpload(){
     if(!this.files[0]){
@@ -39,7 +39,7 @@ export class CreatePostcardComponent implements OnInit {
 
     var fd = new FormData();
     fd.append('api_key',"168757552968833");
-   fd.append('cloud_name','annazhoydik');
+    fd.append('cloud_name','annazhoydik');
     fd.append("file", "data:image/png");
     fd.append("upload_preset", "angular_cloudinary");
 
@@ -58,7 +58,23 @@ export class CreatePostcardComponent implements OnInit {
   }
 
 
-
+  @ViewChild('carousel') carousel:any;
+  movies : Object[] = []
+  slides : Array<Object> = []
+  options : Object = {
+    clicking: true,
+    sourceProp: 'src',
+    visible: 7,
+    perspective: 1,
+    startSlide: 0,
+    border: 3,
+    dir: 'ltr',
+    width: 360,
+    height: 270,
+    space: 220,
+    autoRotationSpeed: 5000,
+    loop: true
+  }
 
 
 
