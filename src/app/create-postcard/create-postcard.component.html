@@ -8,58 +8,63 @@
       <li class="active">Create postcard</li>
     </ol>
   </div>
-  <aside class="col-md-4 sidebar sidebar-left">
-    <div class="picture">
-      <ngx-dropzone (change)="onSelect($event)" style="margin: 20px;">
-        <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
-        <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)" [file]="f">
-          <ngx-dropzone-label>({{ f.type }})</ngx-dropzone-label>
-        </ngx-dropzone-image-preview>
-      </ngx-dropzone>
-    </div>
-      <div>
-        <button (click)="onUpload()">
-          load
-        </button>
-      </div>
+	<!-- /container -->
 
 
-      <div class="row widget">
+    <header class="page-header">
+      <h1 class="page-title"></h1>
+    </header>
+  <div class="options">
+    <h2>Instructions</h2>
 
-    </div>
+    <p>Each card contains 2 cubes. You need to choose 4 photos for each side.</p>
+     <p> It is also possible to change the text (for example: "Congratulations" to "Best wishes")</p>
+    <p>You can write it in Comments.</p>
 
-  </aside>
-
-<section class="product">
-  <div class="container-fluid">
-    <div class="slider-wrap">
-      <div class="slider-main">
-
-        <div class="item">
-        <div class="text"><img src="../../assets/images/1645300431367.png"></div>
-        </div>
-         <div class="item">
-           <div class="text"><img src="../../assets/images/1645300431302.png"></div>
-         </div>
-           <div class="item">
-             <div class="text"><img src="../../assets/images/1645300436334.png"></div>
-           </div>
-      </div>
-      <div class="button-area">
-         <button type="button " class="prev" appPrev>Prev</button>
-         <button type="button" class="next" appNext>Next</button>
-      </div>
-    </div>
   </div>
 
-</section>
 
-  <h1>
-    {{title}}
-  </h1>
-  <ngx-carousel-3d [slides]="slides" [options]="options" class="col-12" #carousel>
-    <ngx-carousel-3d-slide *ngFor="let slide of slides; let i = index" (click)="slideClicked(i)">
-      <img class="slide-img" src="{{slide.src}}" alt=""/>
-    </ngx-carousel-3d-slide>
-  </ngx-carousel-3d>
+  <div class="options">
+  <ngx-slick-carousel class="carousel" margin-right:100px
+                      #slickModal="slick-carousel"
+                      [config]="slideConfig"
+                      (init)="slickInit($event)"
+                      (breakpoint)="breakpoint($event)"
+                      (afterChange)="afterChange($event)"
+                      (beforeChange)="beforeChange($event)">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <img src="{{ slide.img }}" alt="" width="200">
+      <input class="input" type="file">
+    </div>
+  </ngx-slick-carousel>
+    <div>
+      <h2 class="comments">Comments: </h2>
+      <p>There is a 4 standart wishes on the four sides: 1."Congratulations",2."Be Happy",3."You are the best",4."Love ya!"</p>
+      <p>If you would like to change one of this, please choose the number and write yours.(Example: 1.For my best friend!)</p>
+   <input class="textarea" type="text">
+     <img src="../../assets/images/postcard.jpg" alt="" class="img-right" width="200" >
+    </div>
+<div>
+  <button class="prev" (click)="addSlide()">Add</button>
+  <button class="prev" (click)="removeSlide()">Remove</button>
+  <button class="prev" (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+  <button class="prev" (click)="slickModal.unslick()">unslick</button>
+</div>
+  </div>
+
+
+  <!--&lt;!&ndash;<input type="file" class="file-input"&ndash;&gt;-->
+         <!--&lt;!&ndash;(change)="onFileSelected($event)" #fileUpload>&ndash;&gt;-->
+
+  <!--&lt;!&ndash;<div class="file-upload">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;{{fileName || "No file uploaded yet."}}&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<button mat-mini-fab color="primary" class="upload-btn"&ndash;&gt;-->
+            <!--&lt;!&ndash;(click)="fileUpload.click()">&ndash;&gt;-->
+      <!--&lt;!&ndash;&lt;!&ndash;<mat-icon>attach_file</mat-icon>&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;</button>&ndash;&gt;-->
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
 </div>

@@ -1,8 +1,7 @@
 import {Component, Input, OnInit, ViewChild} from '@angular/core';
 import {UploadService} from '../../services/upload.service'
-import { NgxCarousel3dModule }  from 'ngx-carousel-3d';
-import {MovieService} from "../movie.service";
-
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'app-create-postcard',
   templateUrl: './create-postcard.component.html',
@@ -12,8 +11,9 @@ import {MovieService} from "../movie.service";
 export class CreatePostcardComponent implements OnInit {
 
   files: File[] = [];
+  fileName = '';
 
-  constructor(private _uploadService:UploadService, private $movie: MovieService){
+  constructor(private http: HttpClient){
 
   }
 
@@ -58,32 +58,61 @@ export class CreatePostcardComponent implements OnInit {
   }
 
 
-  @ViewChild('carousel') carousel:any;
-  movies : Object[] = []
-  slides : Array<Object> = []
-  options : Object = {
-    clicking: true,
-    sourceProp: 'src',
-    visible: 7,
-    perspective: 1,
-    startSlide: 0,
-    border: 3,
-    dir: 'ltr',
-    width: 360,
-    height: 270,
-    space: 220,
-    autoRotationSpeed: 5000,
-    loop: true
-  }
-
-
-
   ngOnInit(): void {
 
   }
 
+
+slides = [
+  {img: "../../assets/images/postcard1.jpg"},
+  {img: "../../assets/images/postcard2.jpg"},
+  {img: "../../assets/images/postcard3.jpg"},
+  {img: "../../assets/images/postcard4.jpg"},
+
+];
+
+  onFileSelected(event: any) {
+
+    const file:File = event.target.files[0];
+
+    if (file) {
+
+      this.fileName = file.name;
+
+      const formData = new FormData();
+
+      formData.append("thumbnail", file);
+
+      const upload$ = this.http.post("/api/thumbnail-upload", formData);
+
+      upload$.subscribe();
+    }
+  }
+slideConfig = {"slidesToShow": 2, "slidesToScroll": 2};
+
+addSlide() {
+  this.slides.push({img: "../../assets/images/1645300431302.png"})
 }
 
+removeSlide() {
+  this.slides.length = this.slides.length - 1;
+}
+
+slickInit(e:any) {
+  console.log('slick initialized');
+}
+
+breakpoint(e:any) {
+  console.log('breakpoint');
+}
+
+afterChange(e:any) {
+  console.log('afterChange');
+}
+
+beforeChange(e:any) {
+  console.log('beforeChange');
+}}
 
 
 

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgxCarousel3dModule }  from 'ngx-carousel-3d';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +21,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import { NextDirective } from './next.directive';
 import { PrevDirective } from './prev.directive';
+import { BasketComponent } from './basket/basket.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { PrevDirective } from './prev.directive';
     SignupComponent,
     CreatePostcardComponent,
     NextDirective,
-    PrevDirective
+    PrevDirective,
+    BasketComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,7 @@ import { PrevDirective } from './prev.directive';
       },
       useDefaultLang: false,
     }),
-    NgxCarousel3dModule
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

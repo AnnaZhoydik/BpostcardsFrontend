@@ -8,6 +8,7 @@ import {GalleryComponent} from "./gallery/gallery.component";
 import {SigninComponent} from "./signin/signin.component";
 import {SignupComponent} from "./signup/signup.component";
 import {CreatePostcardComponent} from "./create-postcard/create-postcard.component";
+import {BasketComponent} from "./basket/basket.component";
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path: 'gallery',component: GalleryComponent},
   {path: 'signin',component: SigninComponent},
   {path: 'signup',component: SignupComponent},
-  {path:'create-postcard',component:CreatePostcardComponent}
+  {path:'create-postcard',component:CreatePostcardComponent},
+  {path:'basket',component: BasketComponent}
   ];
 
 @NgModule({
