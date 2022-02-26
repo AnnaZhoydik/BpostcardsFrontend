@@ -1,0 +1,24 @@
+<header id="head" class="secondary"></header>
+
+<div class="main-menu">
+  <!-- container -->
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li class="active">basket</li>
+    </ol>
+  </div>
+
+
+    <header class="page-header">
+      <h1 class="page-title"></h1>
+    </header>
+
+  <h3 class="calculator">Here you can see and pay your Order</h3>
+
+</div>
+<div class="calculator">
+  <button type="button" (click)="minus()"><i class="fa fa-minus"> </i></button>
+  <input type="text" [value]="quantity">
+  <button type="button" (click)="plus()"><i class="fa fa-plus"> </i></button>
+</div>
