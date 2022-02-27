@@ -89,6 +89,17 @@
     "newsletter":" Liituge uudiskirjaga",
     "adress":"Aadress"
 
+  },
+  "create-postcard": {
+    "home": "Koduleht",
+    "create": "Loo postkaart",
+    "instructions": "Instructions",
+    "Each": "Igal postkaardil on 2 kuubikut. Mõlemal küljel on vaja valida 4 fotot",
+    "Itspossible": "Samuti on võimalik teksti muuta (näiteks: 'Palju õnne' ja 'Parimate soovidega')",
+    "write_comments": "Saate selle kommentaaridesse kirjutada.",
+    "other": "Kommentaarid: ",
+    "standart": "Neljal küljel on 4 standardsoovi: 1.Õnnitleme 2.Ole õnnelik 3.Sa oled parim 4.Armastan sind!",
+    "choose_number": "Kui soovite mõnda neist muuta, valige number ja kirjutage oma. (Näide: 1. Minu parimale sõbrale!)"
   }
 
 }

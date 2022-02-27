@@ -4,8 +4,8 @@
   <!-- container -->
   <div class="container">
     <ol class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li class="active">Create postcard</li>
+      <li><a href="#">{{ 'create-postcard.home' | translate }}</a></li>
+      <li class="active">{{ 'create-postcard.create' | translate }}</li>
     </ol>
   </div>
 	<!-- /container -->
@@ -15,11 +15,11 @@
       <h1 class="page-title"></h1>
     </header>
   <div class="options">
-    <h2>Instructions</h2>
+    <h2>{{ 'create-postcard.instructions' | translate }}</h2>
 
-    <p>Each card contains 2 cubes. You need to choose 4 photos for each side.</p>
-     <p> It is also possible to change the text (for example: "Congratulations" to "Best wishes")</p>
-    <p>You can write it in Comments.</p>
+    <p>{{ 'create-postcard.each' | translate }}</p>
+     <p>{{ 'create-postcard.its_possible' | translate }}</p>
+    <p>{{ 'create-postcard.write_comments' | translate }}</p>
 
   </div>
 
@@ -38,17 +38,17 @@
     </div>
   </ngx-slick-carousel>
     <div>
-      <h2 class="comments">Comments: </h2>
-      <p>There is a 4 standart wishes on the four sides: 1."Congratulations",2."Be Happy",3."You are the best",4."Love ya!"</p>
-      <p>If you would like to change one of this, please choose the number and write yours.(Example: 1.For my best friend!)</p>
+      <h2 class="comments">{{ 'create-postcard.other' | translate }}</h2>
+      <p>{{ 'create-postcard.standart' | translate }}</p>
+      <p>{{ 'create-postcard.choose_number' | translate }}</p>
    <input class="textarea" type="text">
      <img src="../../assets/images/postcard.jpg" alt="" class="img-right" width="200" >
     </div>
 <div>
   <button class="prev" (click)="addSlide()">Add</button>
-  <button class="prev" (click)="removeSlide()">Remove</button>
-  <button class="prev" (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
-  <button class="prev" (click)="slickModal.unslick()">unslick</button>
+  <!--<button class="prev" (click)="removeSlide()">Remove</button>-->
+  <!--<button class="prev" (click)="slickModal.slickGoTo(2)">slickGoto 2</button>-->
+  <!--<button class="prev" (click)="slickModal.unslick()">unslick</button>-->
 </div>
   </div>
 
