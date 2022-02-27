@@ -1,70 +1,50 @@
 <header id="head" class="secondary"></header>
 
 <div class="main-menu">
-  <!-- container -->
+
   <div class="container">
     <ol class="breadcrumb">
       <li><a href="#">{{ 'create-postcard.home' | translate }}</a></li>
       <li class="active">{{ 'create-postcard.create' | translate }}</li>
     </ol>
   </div>
-	<!-- /container -->
 
-
-    <header class="page-header">
-      <h1 class="page-title"></h1>
-    </header>
+  <header class="page-header">
+    <h1 class="page-title"></h1>
+  </header>
   <div class="options">
     <h2>{{ 'create-postcard.instructions' | translate }}</h2>
 
     <p>{{ 'create-postcard.each' | translate }}</p>
-     <p>{{ 'create-postcard.its_possible' | translate }}</p>
+    <p>{{ 'create-postcard.its_possible' | translate }}</p>
     <p>{{ 'create-postcard.write_comments' | translate }}</p>
 
   </div>
 
 
   <div class="options">
-  <ngx-slick-carousel class="carousel" margin-right:100px
-                      #slickModal="slick-carousel"
-                      [config]="slideConfig"
-                      (init)="slickInit($event)"
-                      (breakpoint)="breakpoint($event)"
-                      (afterChange)="afterChange($event)"
-                      (beforeChange)="beforeChange($event)">
-    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-      <img src="{{ slide.img }}" alt="" width="200">
-      <input class="input" type="file">
-    </div>
-  </ngx-slick-carousel>
+    <ngx-slick-carousel class="carousel" margin-right:100px
+                        #slickModal="slick-carousel"
+                        [config]="slideConfig"
+                        (init)="slickInit($event)"
+                        (breakpoint)="breakpoint($event)"
+                        (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img src="{{ slide.img }}" alt="" width="200">
+        <input class="input" type="file">
+      </div>
+    </ngx-slick-carousel>
     <div>
       <h2 class="comments">{{ 'create-postcard.other' | translate }}</h2>
       <p>{{ 'create-postcard.standart' | translate }}</p>
       <p>{{ 'create-postcard.choose_number' | translate }}</p>
-   <input class="textarea" type="text">
-     <img src="../../assets/images/postcard.jpg" alt="" class="img-right" width="200" >
+      <input class="textarea" type="text">
+      <img src="../../assets/images/postcard.jpg" alt="" class="img-right" width="200">
     </div>
-<div>
-  <button class="prev" (click)="addSlide()">Add</button>
-  <!--<button class="prev" (click)="removeSlide()">Remove</button>-->
-  <!--<button class="prev" (click)="slickModal.slickGoTo(2)">slickGoto 2</button>-->
-  <!--<button class="prev" (click)="slickModal.unslick()">unslick</button>-->
-</div>
+    <div>
+      <button class="prev" (click) = "addToBasket()">Add to basket</button>
+
+    </div>
   </div>
-
-
-  <!--&lt;!&ndash;<input type="file" class="file-input"&ndash;&gt;-->
-         <!--&lt;!&ndash;(change)="onFileSelected($event)" #fileUpload>&ndash;&gt;-->
-
-  <!--&lt;!&ndash;<div class="file-upload">&ndash;&gt;-->
-
-    <!--&lt;!&ndash;{{fileName || "No file uploaded yet."}}&ndash;&gt;-->
-
-    <!--&lt;!&ndash;<button mat-mini-fab color="primary" class="upload-btn"&ndash;&gt;-->
-            <!--&lt;!&ndash;(click)="fileUpload.click()">&ndash;&gt;-->
-      <!--&lt;!&ndash;&lt;!&ndash;<mat-icon>attach_file</mat-icon>&ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;</button>&ndash;&gt;-->
-  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-
 </div>

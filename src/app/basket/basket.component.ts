@@ -14,8 +14,8 @@ export class BasketComponent implements OnInit {
 
   }
 
-  quantity: number = 1;
-  i = 1
+  quantity: number = 0;
+  i = 0;
 
   plus() {
     if (this.i != 5) {
@@ -25,7 +25,7 @@ export class BasketComponent implements OnInit {
   }
 
   minus() {
-    if (this.i != 1) {
+    if (this.i != 0) {
       this.i--;
       this.quantity = this.i;
     }

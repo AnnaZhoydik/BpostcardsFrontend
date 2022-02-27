@@ -1,6 +1,7 @@
 .main-menu {
 
   margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 .product{
@@ -199,5 +200,8 @@ input:focus {
   }
   .buttons {
     margin-right: 20px;
+  }
+  .total{
+
   }
 }

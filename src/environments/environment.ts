@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   locales: ['en', 'ru', 'est'],
-  defaultLocale: 'en'
+  defaultLocale: 'en',
+  products:[]
 };
 
 /*

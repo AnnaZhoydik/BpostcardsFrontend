@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable} from 'rxjs';
-import language from '../../assets/language.json'
 import {TranslateService} from "@ngx-translate/core";
 
 @Component({

@@ -10,115 +10,108 @@
   </div>
 
 
-    <header class="page-header">
-      <h1 class="page-title"></h1>
-    </header>
+  <header class="page-header">
+    <h1 class="page-title"></h1>
+  </header>
 
-  <!--<h3 class="calculator">Here you can see and pay your Order</h3>-->
+  <div class="shopping-cart">
+    <!-- Title -->
+    <div class="title">
+      Shopping Bag
+    </div>
 
-<!--</div>-->
-<!--<div class="calculator">-->
-  <!--<button type="button" (click)="minus()"><i class="fa fa-minus"> </i></button>-->
-  <!--<input type="text" [value]="quantity">-->
-  <!--<button type="button" (click)="plus()"><i class="fa fa-plus"> </i></button>-->
-<!--</div>-->
-<div class="shopping-cart">
-  <!-- Title -->
-  <div class="title">
-    Shopping Bag
+    <!-- Product #1 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="../../assets/images/postcard1.jpg" alt=""/>
+      </div>
+
+      <div class="description">
+        <span>Common Projects</span>
+        <span>Bball High</span>
+        <span>White</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" (click)="plus()" type="button" name="button">
+          <img src="../../assets/images/plus.png" alt=""/>
+        </button>
+        <input type="text" [value]="quantity">
+        <button class="minus-btn" (click)="minus()" type="button" name="button">
+          <img src="../../assets/images/minus.png" alt=""/>
+        </button>
+      </div>
+
+      <div class="total-price">$549</div>
+    </div>
+
+    <!-- Product #2 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="../../assets/images/postcard.jpg" alt=""/>
+      </div>
+
+      <div class="description">
+        <span>Maison Margiela</span>
+        <span>Future Sneakers</span>
+        <span>White</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" (click)="plus()" type="button" name="button">
+          <img src="../../assets/images/plus.png" alt=""/>
+        </button>
+        <input type="text" [value]="quantity">
+        <button class="minus-btn" (click)="minus()" type="button" name="button">
+          <img src="../../assets/images/minus.png" alt=""/>
+        </button>
+      </div>
+
+      <div class="total-price">$870</div>
+    </div>
+
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="../../assets/images/postcard2.jpg" alt=""/>
+      </div>
+
+      <div class="description">
+        <span>Our Legacy</span>
+        <span>Brushed Scarf</span>
+        <span>Brown</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="../../assets/images/plus.png" alt=""/>
+        </button>
+        <input type="text" [value]="quantity">
+        <button class="minus-btn" type="button" name="button">
+          <img src="../../assets/images/minus.png" alt=""/>
+        </button>
+      </div>
+
+      <div class="total-price">$349</div>
+
+      <div>
+        <button class="prev">pay</button>
+
+      </div>
+    </div>
   </div>
-
-  <!-- Product #1 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
-
-    <div class="image">
-      <img src="../../assets/images/postcard1.jpg" alt="" />
-    </div>
-
-    <div class="description">
-      <span>Common Projects</span>
-      <span>Bball High</span>
-      <span>White</span>
-    </div>
-
-    <div class="quantity">
-      <button class="plus-btn" (click)="plus()" type="button" name="button">
-        <img src="../../assets/images/plus.png" alt="" />
-      </button>
-      <input type="text" [value]="quantity">
-      <button class="minus-btn" (click)="minus()" type="button" name="button">
-        <img src="../../assets/images/minus.png" alt="" />
-      </button>
-    </div>
-
-    <div class="total-price">$549</div>
-  </div>
-
-  <!-- Product #2 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
-
-    <div class="image">
-      <img src="../../assets/images/postcard.jpg" alt=""/>
-    </div>
-
-    <div class="description">
-      <span>Maison Margiela</span>
-      <span>Future Sneakers</span>
-      <span>White</span>
-    </div>
-
-    <div class="quantity">
-      <button class="plus-btn" (click)="plus()" type="button" name="button">
-        <img src="../../assets/images/plus.png" alt="" />
-      </button>
-      <input type="text" [value]="quantity">
-      <button class="minus-btn" (click)="minus()" type="button" name="button">
-        <img src="../../assets/images/minus.png" alt="" />
-      </button>
-    </div>
-
-    <div class="total-price">$870</div>
-  </div>
-
-  <!-- Product #3 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
-
-    <div class="image">
-      <img src="../../assets/images/postcard2.jpg" alt="" />
-    </div>
-
-    <div class="description">
-      <span>Our Legacy</span>
-      <span>Brushed Scarf</span>
-      <span>Brown</span>
-    </div>
-
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="../../assets/images/plus.png" alt="" />
-      </button>
-      <input type="text" [value]="quantity">
-      <button class="minus-btn" type="button" name="button">
-        <img src="../../assets/images/minus.png" alt="" />
-      </button>
-    </div>
-
-    <div class="total-price">$349</div>
-
-    <div> <button class="prev" >pay</button></div>
-  </div>
-
-</div>
 </div>

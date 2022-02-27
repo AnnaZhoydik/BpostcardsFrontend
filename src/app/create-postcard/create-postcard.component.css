@@ -11,14 +11,12 @@
 
 .prev{
   position: relative;
-  /*left: 100px;*/
-  top: 60%;
+  top: 50%;
   border-radius: 10px;
-  width: 100px;
+  width: 200px;
   height: 50px;
-  /*transform: translate(-50%,-50%);*/
   transition-duration: 0.4s;
-  margin-top: 100px;
+  margin-top: 10px;
 
 }
 .prev:hover {
