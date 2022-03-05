@@ -39,7 +39,7 @@
       <h2 class="comments">{{ 'create-postcard.other' | translate }}</h2>
       <p>{{ 'create-postcard.standart' | translate }}</p>
       <p>{{ 'create-postcard.choose_number' | translate }}</p>
-      <input class="textarea" type="text">
+      <input class="textarea" type="text" [(ngModel)]="comment">
       <img src="../../assets/images/postcard.jpg" alt="" class="img-right" width="200">
     </div>
     <div>

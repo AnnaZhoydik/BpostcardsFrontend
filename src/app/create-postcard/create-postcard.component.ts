@@ -2,6 +2,8 @@ import {Component, Input, OnInit, ViewChild} from '@angular/core';
 import {UploadService} from '../../services/upload.service'
 import {SlickCarouselModule} from 'ngx-slick-carousel';
 import {HttpClient} from "@angular/common/http";
+import {car} from "@cloudinary/url-gen/qualifiers/focusOn";
+
 
 @Component({
   selector: 'app-create-postcard',
@@ -13,14 +15,11 @@ export class CreatePostcardComponent implements OnInit {
 
   files: File[] = [];
   fileName = '';
+  public comment: string = "";
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient) {}
 
-  }
-
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
 
   slides = [
@@ -80,9 +79,37 @@ export class CreatePostcardComponent implements OnInit {
 
     let quantity = (el != null) ? el.innerHTML : 0;
     if (el != null){
-      el.innerHTML = Number(quantity) + 1 + "";
+      quantity = Number(quantity) + 1 + "";
+      el.innerHTML = quantity;
     }
-    console.log(quantity);
+    localStorage.setItem("quantity", quantity + "");
+    let card = {
+      name: "postcard",
+      comment: this.comment
+    }
+
+    let cards = localStorage.getItem("cards");
+    if (cards == null){
+      localStorage.setItem("cards", JSON.stringify({}));
+    } else {
+      let cards_item = JSON.parse(cards);
+      let number = Object.keys(cards_item).length + 1;
+      cards_item["card_" + number] = card;
+      localStorage.setItem("cards", JSON.stringify(cards_item));
+      console.log(localStorage.getItem("cards"));
+      // let a = localStorage.getItem("cards");
+      //
+      // if(a == null){
+      //   console.log(-1);
+      // } else {
+      //   let b  = JSON.parse(a);
+      //   console.log(Object.keys(b).length);
+      // }
+
+    }
+
+
+    // localStorage.setItem("")
   }
 }
 

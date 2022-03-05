@@ -7,15 +7,30 @@ import {Component, OnInit} from '@angular/core';
 })
 export class BasketComponent implements OnInit {
 
+  quantity: number = 0;
+  i = 0;
+
+  st = localStorage.getItem("cards");
+  public jsonCards = this.st == null ? [] : JSON.parse(this.st);
+  public cards = Object.keys(this.jsonCards);
+  public comments: string[] = [];
+
   constructor() {
   }
 
   ngOnInit(): void {
 
+    console.log(this.jsonCards);
+
+    for (let i in this.cards){
+      console.log(this.i);
+      this.comments.push(this.jsonCards[this.cards[i]].comment + "")
+    }
   }
 
-  quantity: number = 0;
-  i = 0;
+
+
+
 
   plus() {
     if (this.i != 5) {

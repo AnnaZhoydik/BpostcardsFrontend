@@ -9,6 +9,7 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class  HeaderComponent implements OnInit {
 
+  public quantity: number = Number(localStorage.getItem("quantity"));
   constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {

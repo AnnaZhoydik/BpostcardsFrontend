@@ -22,6 +22,7 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import { NextDirective } from './next.directive';
 import { PrevDirective } from './prev.directive';
 import { BasketComponent } from './basket/basket.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { BasketComponent } from './basket/basket.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     NgxDropzoneModule,
     HttpClientModule,
